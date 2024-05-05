@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Eduverse</title>
+    <style>
+        button {
+  float: left;
+  font-size: 14px;
+  font-family:verdana;
+  padding: 12px 35px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 0;
+  background-color:   #ffb3ff;
+  outline: 0;
+
+}
+       .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+body{
+background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);}
+
+
+    </style>
+</head>
+<body >
+<div class="container">
+    <div>
+        <button onclick="Indexfun()" ><</></button><br><br>
+
+        <h1 style="text-align :center">Welcome User!
+
+
+        </h1>
+    </div>
+</div>
+<div class="container" >
+    <div class="card__wrap--outer">
+        <div class="card__wrap--inner">
+           <center> <div class="card">
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2klEQVR4nO2awQnDMBAE9+Wu0p7t1OUS3EKUNjYE9AjCj8BJupO1A/uWhtUdGAwIIawsAJ4A3gDYOQnAnu9gZncQYJGthohHEyzyvYMZBokZbwFKpMC7CaqRzBGgBbYSOVvVnmHLp/XLY2QR9hjEP87qLmJ5+5RIpa1VC2prNdhamhEEG/ZWZ5kZXuSYcWuxQ7psrSFEGCRmvAUokZm/EBlZ5AptLQRohEFi5pbDzruInCOKXKGthQCNMEjMeAtQIgUpQBsvVGALILLWEFmyTHJqYq31w4AQM/MBkhTc3RPbImcAAAAASUVORK5CYII=" onclick="notesfun()">
+               <div class="card__item">
+                   <h2>Notes</h2>
+               </div>
+
+           </div></center>
+        </div>
+
+        <div class="card__wrap--inner">
+            <center><div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" id="videos" onclick = "videosfun()"><path style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none" d="M22 8C14.261 8 8 14.261 8 22v16c0 7.739 6.261 14 14 14h16c7.739 0 14-6.261 14-14V22c0-7.739-6.261-14-14-14H22zm0 2h5.465l3.334 5-3.334 5h-6.596l2.963-4.445a1 1 0 0 0 0-1.11l-2.926-4.39C21.267 10.023 21.63 10 22 10zm7.87 0h6.595l3.334 5-3.334 5h-6.596l2.963-4.445a1 1 0 0 0 0-1.11L29.869 10zm9.028.045A11.923 11.923 0 0 1 49.822 20H38.87l2.963-4.445a1 1 0 0 0 0-1.11l-2.933-4.4zm-20.135.404L21.8 15l-3.334 5h-8.288a11.916 11.916 0 0 1 8.586-9.55zM10 22h40v16c0 6.666-5.335 12-12 12H22c-6.666 0-12-5.334-12-12V22z" color="#000" ></path></svg>
+                <div class="card__item">
+                    <h2>Videos</h2>
+                </div>
+
+            </div></center>
+        </div>
+
+        <div class="card__wrap--inner">
+          <center>  <div class="card">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACkklEQVR4nO2Zv2oVQRTGf8nVK6jB3tYusdYu6guIRk2ZNIIk+CdapLaS4ANY2Ahq9AHsbIRc8gDGoDGJiJ3BLoqYwqwc+BaGZP/Mzr27d4X54MDM7Dkz8+2cM3N2ByIiGsFFYBtIKsoWMNngeNvAhaKOQzpNZTOASG3jJZKRCpMZceyqorbxkj4n1Bq7pG0TykEkUoa4IjTkWr2C7a9Xw4r0BjVelY5XMuxCJXS8XPT7Zvsl4ovaiTR9kP4/u08OIpEyxBUhuhaNBHvTB+lQiKzUMF77gzYHkUgZ4ooQXYsY7EWIMUJYjNwEdtr2Zt849S4wDbwCNoBfEisv65npGE7VNaEQu2fAEZWngC8eX5P2m/VqXRMKtbOvxFHgsdPHe+AuMA6ckEwA94A1R29Jtq0ggkPiD3CraHJ6NifdlEwrstgph0ThNUHGdURK5sqws9iuExO2Ej6wAJ9Red65mzlaRsQXIXbTTkwUuVMKm+xb2SwCHeCD6tcZIpHXsrnjqf9E+j+AM2pbUNvLYcbIZ9nY7lSGRen+Bs477RNq36grRlYL7I5JZ1f1McfuYQaxa8BfiZVdjKmP3TIivqjyAvKI3FDdTvJZtZ3TKqRxQdNEQlzruE76xPH77yo/zenjrK9r+SLEblk2dmK7mNGqpH2+c/Krg3ggneeDmFC/2+9axvY7DqxL8pLDjp4Xbr+hf9Wr2HWde3ZLOw7CXO10gf1t57790IG4VRCkgxT7nkBZbJqiWNrhi0vAHrAPXM5SmBTDqhP7BnytoL/juMySQ2ZeLpOHjlZiTzaPaBFGHTKJ0o4FHXYnJbY73XdiYl8kfFKbxmFZrI9rm8dkulObYEFrO5CdIZ+An5KPwAs9OxTYhn8ywnDP6WSxtwAAAABJRU5ErkJggg==" onclick="assignmentfun()">
+              <div class="card__item">
+                  <h2>Assignments</h2>
+              </div>
+
+          </div></center>
+        </div>
+    </div>
+</div>
+<script src= "script.js"></script>
+</body>
+</html>
